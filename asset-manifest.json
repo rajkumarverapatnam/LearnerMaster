@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/LearnerMaster/static/css/main.f706d390.chunk.css",
-    "main.js": "/LearnerMaster/static/js/main.a795615a.chunk.js",
-    "main.js.map": "/LearnerMaster/static/js/main.a795615a.chunk.js.map",
+    "main.js": "/LearnerMaster/static/js/main.4cee3db3.chunk.js",
+    "main.js.map": "/LearnerMaster/static/js/main.4cee3db3.chunk.js.map",
     "runtime-main.js": "/LearnerMaster/static/js/runtime-main.64f23b2f.js",
     "runtime-main.js.map": "/LearnerMaster/static/js/runtime-main.64f23b2f.js.map",
     "static/css/2.8565c925.chunk.css": "/LearnerMaster/static/css/2.8565c925.chunk.css",
     "static/js/2.6c70a85d.chunk.js": "/LearnerMaster/static/js/2.6c70a85d.chunk.js",
     "static/js/2.6c70a85d.chunk.js.map": "/LearnerMaster/static/js/2.6c70a85d.chunk.js.map",
     "index.html": "/LearnerMaster/index.html",
-    "precache-manifest.e8abd653412788be3f9562ad80c420b0.js": "/LearnerMaster/precache-manifest.e8abd653412788be3f9562ad80c420b0.js",
+    "precache-manifest.fd97ecc58fa25a74b44ce0d8d14bcf46.js": "/LearnerMaster/precache-manifest.fd97ecc58fa25a74b44ce0d8d14bcf46.js",
     "service-worker.js": "/LearnerMaster/service-worker.js",
     "static/css/2.8565c925.chunk.css.map": "/LearnerMaster/static/css/2.8565c925.chunk.css.map",
     "static/css/main.f706d390.chunk.css.map": "/LearnerMaster/static/css/main.f706d390.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.8565c925.chunk.css",
     "static/js/2.6c70a85d.chunk.js",
     "static/css/main.f706d390.chunk.css",
-    "static/js/main.a795615a.chunk.js"
+    "static/js/main.4cee3db3.chunk.js"
   ]
 }
