@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32d77ebdaed42f68dd88bcad3482311c",
+    "revision": "a22fb1690499d7727e8363e8f24a1364",
     "url": "/LearnerMaster/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LearnerMaster/static/css/2.8565c925.chunk.css"
   },
   {
-    "revision": "0cf7daf87a0d4ef2dd4a",
+    "revision": "5f95f0aac209eb99dc8c",
     "url": "/LearnerMaster/static/css/main.f706d390.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/LearnerMaster/static/js/2.6c70a85d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0cf7daf87a0d4ef2dd4a",
-    "url": "/LearnerMaster/static/js/main.c9c27619.chunk.js"
+    "revision": "5f95f0aac209eb99dc8c",
+    "url": "/LearnerMaster/static/js/main.7369382f.chunk.js"
   },
   {
     "revision": "9760cebdaf70dad41651",
