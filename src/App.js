@@ -10,7 +10,7 @@ import { memoryRoutingHistory } from "./routing/history";
 
 function App() {
   return (
-    <Router history={memoryRoutingHistory} basename={process.env.PUBLIC_URL}>
+    <Router history={memoryRoutingHistory} basename={"/LearnerMaster"}>
       <Switch>
         <Route exact path="/" component={Login} />
         <Route path={PATHS.Login} component={Login} />
