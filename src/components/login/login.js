@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { updateLoginStatus, setUserId } from "./login.actions";
 import { changeRoute } from "../../routing/history";
 import { PATHS } from "../../routing/paths_constants";
-import LearnerList from "../learner_list/learner_list";
 
 class Login extends Component {
   constructor(props) {
@@ -11,6 +10,7 @@ class Login extends Component {
     this.state = {
       email: "",
       password: "",
+      displayBtn: true,
       displayLearnerList: false,
     };
   }
@@ -52,6 +52,7 @@ class Login extends Component {
     this.setState({
       ...this.state,
       displayLearnerList: true,
+      displayBtn: false,
     });
   }
 
@@ -98,22 +99,25 @@ class Login extends Component {
             </div>
           </div>
         </div>
-        {!this.state.displayLearnerList && (
-          <div
-            onClick={() => this.updateDisplaylist()}
-            style={{
-              cursor: "pointer",
-              fontSize: "18px",
-              color: "yellow",
-              backgroundColor: "#66c3d2",
-              width: "200px",
-            }}
-          >
-            {" "}
-            Show Learners List{" "}
-          </div>
-        )}
+        {this.state.displayBtn &&
+          this.props.location &&
+          this.props.location.pathname !== "/students" && (
+            <div
+              onClick={() => this.updateDisplaylist()}
+              style={{
+                cursor: "pointer",
+                fontSize: "18px",
+                color: "yellow",
+                backgroundColor: "#66c3d2",
+                width: "200px",
+              }}
+            >
+              {" "}
+              Show Learners List{" "}
+            </div>
+          )}
         {this.state.displayLearnerList &&
+          this.props.location &&
           (this.props.location.pathname === "/" ||
             this.props.location.pathname === "/login") &&
           this.navigateToLearnersList()}

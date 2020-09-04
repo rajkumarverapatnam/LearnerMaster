@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { PATHS } from "../../routing/paths_constants";
+import { updateLoginStatus, setUserId } from "../login/login.actions";
+import { changeRoute } from "../../routing/history";
 
 class Logout extends Component {
   render() {
@@ -12,7 +16,11 @@ class Logout extends Component {
           width: "80px",
           padding: "8px",
           margin: "10px",
+          cursor: "pointer",
+          position: "absolute",
+          right: "45px",
         }}
+        onClick={() => this.props.onLogout()}
       >
         Logout
       </div>
@@ -20,4 +28,14 @@ class Logout extends Component {
   }
 }
 
-export default Logout;
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+  onLogout: () => {
+    dispatch(updateLoginStatus(false));
+    dispatch(setUserId(null));
+    changeRoute(PATHS.Login);
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Logout);
