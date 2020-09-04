@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { updateLoginStatus, setUserId } from "./login.actions";
-import { changeRoute } from "../../routing/history";
+import { changeRoute, basePath } from "../../routing/history";
 import { PATHS } from "../../routing/paths_constants";
 
 class Login extends Component {
@@ -101,7 +101,7 @@ class Login extends Component {
         </div>
         {this.state.displayBtn &&
           this.props.location &&
-          this.props.location.pathname !== "/students" && (
+          !this.props.location.pathname.includes("/students") && (
             <div
               onClick={() => this.updateDisplaylist()}
               style={{
@@ -118,8 +118,8 @@ class Login extends Component {
           )}
         {this.state.displayLearnerList &&
           this.props.location &&
-          (this.props.location.pathname === "/" ||
-            this.props.location.pathname === "/login") &&
+          (this.props.location.pathname === basePath + "/" ||
+            this.props.location.pathname.includes("/login")) &&
           this.navigateToLearnersList()}
       </div>
     );

@@ -1,11 +1,11 @@
-import { createBrowserHistory } from 'history';
-
+import { createBrowserHistory } from "history";
 
 export const memoryRoutingHistory = createBrowserHistory();
-
+export const basePath = process.env.PUBLIC_URL || "/LearnerMaster";
 
 export const changeRoute = (routeUrl) => {
-  memoryRoutingHistory.push(routeUrl);
+  console.log("**route", basePath + routeUrl);
+  memoryRoutingHistory.push(basePath + routeUrl);
 };
 
 export const goBackRoute = () => {
